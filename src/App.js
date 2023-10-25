@@ -11,8 +11,6 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <>
-      <ToastContainer position="bottom-left" />
-
       <Router>
         <div className="App">
           <section className="App__list">

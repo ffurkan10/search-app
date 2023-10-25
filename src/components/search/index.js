@@ -24,10 +24,10 @@ const Search = ({ title }) => {
   }, []);
 
   const handleSearch = (event) => {
-    const term = event.target.value.toLowerCase();
+    const term = event.target.value?.toLowerCase();
     setSearchTerm(term);
     const filteredDatas = jsonData.filter((search) =>
-      search.nameSurname.toLowerCase().includes(term)
+      search.nameSurname?.toLowerCase()?.includes(term)
     );
     setFilteredDatas(filteredDatas);
   };

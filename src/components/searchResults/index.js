@@ -55,13 +55,13 @@ const SearchResults = () => {
   const searchData = (txt) => {
     setSearchValue(txt);
     const filteredDatas = jsonData.filter((search) =>
-      search.nameSurname.toLowerCase().includes(txt)
+      search.nameSurname?.toLowerCase()?.includes(txt)
     );
     setFilteredDatas(filteredDatas);
   };
 
   const handleSearch = (event) => {
-    const term = event.target.value.toLowerCase();
+    const term = event.target.value?.toLowerCase();
     searchData(term);
   };
 
