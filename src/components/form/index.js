@@ -44,7 +44,7 @@ const AddForm = () => {
 
     jsonData.push({
       id: jsonData.length + 1,
-      nameSurname: formData.namesurname,
+      nameSurname: formData.nameSurname,
       email: formData.email,
       website: formData.website,
       country: formData.country,
@@ -90,6 +90,8 @@ const AddForm = () => {
 
     showErrorToast(errorMessages);
   };
+
+  console.log(errors);
 
   return (
     <div className={Styles.formContainer}>

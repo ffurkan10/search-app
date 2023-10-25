@@ -39,10 +39,8 @@ const newsData = [
 
 const LandingPage = () => {
   const jsonData = require("../../data/data.json");
-  if (jsonData) {
-  } else {
+  if (!localStorage.getItem("jsonData")) {
     localStorage.setItem("jsonData", JSON.stringify(jsonData));
-    console.log("jsonData is empty.");
   }
 
   return (
