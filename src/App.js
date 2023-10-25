@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/global.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
+import LandingPage from "./pages/landingPage";
+import SearchPage from "./pages/searchPage";
+import AddRecord from "./pages/addRecord";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer position="bottom-left" />
+
+      <Router>
+        <div className="App">
+          <section className="App__list">
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+
+              <Route path="/search" element={<SearchPage />} />
+
+              <Route path="/record" element={<AddRecord />} />
+            </Routes>
+          </section>
+        </div>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

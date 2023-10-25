@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 50px;
+  margin: 0 auto;
+  img {
+    margin-top: 50px;
+  }
+  .text {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}

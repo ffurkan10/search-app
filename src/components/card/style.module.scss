@@ -1,0 +1,27 @@
+.card {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .text {
+    padding: 5px 65px 5px 55px;
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-block: 5px;
+    }
+    span {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(108, 112, 114, 1);
+    }
+  }
+}

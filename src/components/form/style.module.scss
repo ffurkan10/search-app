@@ -1,0 +1,17 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .formRow {
+    margin-bottom: 30px;
+  }
+  .form {
+    width: 67%;
+  }
+}
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

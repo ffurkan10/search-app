@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+.footerContainer {
+  margin-top: 50px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: $color-footer;
+  color: #ffffff;
+  padding: 2rem 5rem 2rem 5rem;
+  .contact {
+    text-align: left;
+    p {
+      width: 50%;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .iframe {
+    width: 30%;
+    height: 230px;
+  }
+}

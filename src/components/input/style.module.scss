@@ -1,0 +1,36 @@
+.input {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+
+  .icon {
+    position: absolute;
+    padding: 15px 15px;
+    z-index: 999;
+  }
+  input {
+    border-radius: 8px;
+    height: 48px;
+    padding: 10px 20px 10px 35px;
+    border: 2px solid rgba(32, 64, 128, 1);
+    width: 100%;
+    outline: none;
+  }
+}
+.isForm {
+  input {
+    margin-top: 5px;
+  }
+}
+.results {
+  width: 70% !important;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.errorInput {
+  border-color: red !important;
+}
+.hasError {
+  color: red !important;
+}
