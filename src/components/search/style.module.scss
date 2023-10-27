@@ -1,21 +1,35 @@
+@import "../../styles/mixins";
 .searchContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  @include breakpoint(sm) {
+    margin-top: 10px;
+  }
   .header {
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 900px;
+    width: 70%;
+    @include breakpoint(sm) {
+      width: 100%;
+    }
   }
   .search {
-    width: 880px;
+    width: 65%;
     display: flex;
     margin-bottom: 20px;
     align-items: center;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      width: 100%;
+      button {
+        margin-top: 10px;
+      }
+    }
   }
 }
 .searchResult {

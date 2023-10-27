@@ -13,3 +13,16 @@
     margin-top: 50px;
   }
 }
+.swipper {
+  margin-block: 20px;
+}
+.swipper > div {
+  transition-timing-function: linear !important;
+
+  & > div {
+    width: 250px;
+    cursor: initial;
+    // display: flex;
+    // align-items: center;
+  }
+}

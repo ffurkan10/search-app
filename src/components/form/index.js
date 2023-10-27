@@ -73,25 +73,25 @@ const AddForm = () => {
     return true;
   };
 
-  const showErrorToast = (message) => {
-    toast.error(message);
-  };
+  // const showErrorToast = (message) => {
+  //   toast.error(message);
+  // };
 
-  const combineErrorMessages = () => {
-    const errorMessages = [
-      errors.nameSurname?.message,
-      errors.country?.message,
-      errors.city?.message,
-      errors.email?.message,
-      errors.website?.message,
-    ]
-      .filter(Boolean)
-      .join("\n");
+  // const combineErrorMessages = () => {
+  //   const errorMessages = [
+  //     errors.nameSurname?.message,
+  //     errors.country?.message,
+  //     errors.city?.message,
+  //     errors.email?.message,
+  //     errors.website?.message,
+  //   ]
+  //     .filter(Boolean)
+  //     .join("\n");
 
-    showErrorToast(errorMessages);
-  };
+  //   showErrorToast(errorMessages);
+  // };
 
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <div className={Styles.formContainer}>
@@ -257,7 +257,7 @@ const AddForm = () => {
         </div>
 
         <div className={Styles.button}>
-          <Button onClick={combineErrorMessages}>Add</Button>
+          <Button>Add</Button>
         </div>
       </form>
 

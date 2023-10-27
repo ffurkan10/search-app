@@ -19,7 +19,6 @@ const SearchResults = () => {
   const [selectFilter, setSelectFilter] = useState(false);
   const [filterName, setFilterName] = useState("Order By");
   const [currentPage, setCurrentPage] = useState(0);
-  const [totalPages, setTotalPages] = useState(0);
   const itemsPerPage = 3;
 
   // useEffect(() => {
@@ -106,8 +105,9 @@ const SearchResults = () => {
               results
             />
           </div>
-
-          <Button href="/record">Add new record</Button>
+          <div className={Style.add}>
+            <Button href="/record">Add new record</Button>
+          </div>
         </div>
 
         <div className={Style.filter}>

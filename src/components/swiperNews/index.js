@@ -17,7 +17,17 @@ const SwiperNews = ({ title, data }) => {
           spaceBetween={30}
           allowTouchMove={true}
           className={Style.swipper}
-          slidesPerView={3}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           modules={[Navigation]}
           navigation
         >

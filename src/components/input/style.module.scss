@@ -1,3 +1,4 @@
+@import "../../styles/mixins";
 .input {
   position: relative;
   width: 100%;
@@ -27,6 +28,10 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  @include breakpoint(md) {
+    width: 100% !important;
+    margin: initial;
+  }
 }
 .errorInput {
   border-color: red !important;
